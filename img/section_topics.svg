@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="348" viewBox="0 0 1100 348">
+  <g id="section_topics" transform="translate(-170 -2231)">
+    <text id="LATEST_TOPICS" data-name="LATEST TOPICS" transform="translate(170 2262)" fill="#333" font-size="32" font-family="Montserrat-ExtraBold, Montserrat" font-weight="800" letter-spacing="0.068em"><tspan x="0" y="0">LATEST TOPICS</tspan></text>
+    <text id="_2020.02.01" data-name="2020.02.01" transform="translate(570 2310)" fill="#cecece" font-size="10" font-family="Helvetica-Bold, Helvetica" font-weight="700" letter-spacing="0.015em"><tspan x="0" y="0">2020.02.01</tspan></text>
+    <text id="イベントレポート_VRクリエイター座談会_5Gの次に来るもの_" data-name="イベントレポート「VRクリエイター座談会 〜5Gの次に来るもの〜」" transform="translate(570 2337)" fill="#333" font-size="14" font-family="HiraginoSans-W6, Hiragino Sans" letter-spacing="0.004em"><tspan x="0" y="0">イベントレポート「</tspan><tspan y="0" font-family="Helvetica-Bold, Helvetica" font-weight="700">VR</tspan><tspan y="0">クリエイター座談会</tspan><tspan y="0" font-family="Helvetica-Bold, Helvetica" font-weight="700"> </tspan><tspan y="0">〜</tspan><tspan y="0" font-family="Helvetica-Bold, Helvetica" font-weight="700">5G</tspan><tspan y="0">の次に来るもの〜」</tspan></text>
+    <line id="under-line" x2="700" transform="translate(570 2351)" fill="none" stroke="#ddd" stroke-width="1"/>
+    <text id="_2020.01.18" data-name="2020.01.18" transform="translate(570 2391)" fill="#cecece" font-size="10" font-family="Helvetica-Bold, Helvetica" font-weight="700" letter-spacing="0.015em"><tspan x="0" y="0">2020.01.18</tspan></text>
+    <text id="プレスリリースのお知らせ_DIGGIN_RECORDS" data-name="プレスリリースのお知らせ DIGGIN’ RECORDS" transform="translate(570 2418)" fill="#333" font-size="14" font-family="HiraginoSans-W6, Hiragino Sans" letter-spacing="0.001em"><tspan x="0" y="0">プレスリリースのお知らせ</tspan><tspan y="0" xml:space="preserve" font-family="Helvetica-Bold, Helvetica" font-weight="700"> DIGGIN’ RECORDS</tspan></text>
+    <line id="under-line-2" data-name="under-line" x2="700" transform="translate(570 2432)" fill="none" stroke="#ddd" stroke-width="1"/>
+    <text id="_2020.01.01" data-name="2020.01.01" transform="translate(570 2472)" fill="#cecece" font-size="10" font-family="Helvetica-Bold, Helvetica" font-weight="700" letter-spacing="0.015em"><tspan x="0" y="0">2020.01.01</tspan></text>
+    <text id="新年明けましておめでとうございます" transform="translate(570 2499)" fill="#333" font-size="14" font-family="HiraginoSans-W6, Hiragino Sans" letter-spacing="0.001em"><tspan x="0" y="0">新年明けましておめでとうございます</tspan></text>
+    <line id="under-line-3" data-name="under-line" x2="700" transform="translate(570 2513)" fill="none" stroke="#ddd" stroke-width="1"/>
+    <g id="btn_link" transform="translate(1110 2543)">
+      <rect id="bg_btn" width="160" height="36"/>
+      <text id="READ_MORE" data-name="READ MORE" transform="translate(41 22)" fill="#fff" font-size="12" font-family="Helvetica-Bold, Helvetica" font-weight="700" letter-spacing="0.015em"><tspan x="0" y="0">READ MORE</tspan></text>
+    </g>
+  </g>
+</svg>

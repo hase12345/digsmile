@@ -1,0 +1,271 @@
+@import "tool/default", "tool/header", "tool/footer";
+
+@mixin content-wrapper {
+    max-width: 1100px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+@mixin flex__between {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin btn-style {
+  display: block;
+  background-color: #000;
+  color: #fff;
+  width: 200px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.flex__between {
+  @include flex__between();
+}
+//main
+.top {
+  height: 100vh;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #222;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  &__wrapper {
+    position: relative;
+    height: 86.5%;
+    width: 75%;
+    background-image: url(../img/kv-img.png);
+    background-size: cover;
+    background-position: center 0;
+    background-repeat: no-repeat;
+
+    &__text {
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(50%,-50%);
+      font-size: 2rem;
+
+      &__jp {
+        margin-bottom: 4px;
+      }
+
+      &__company {
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      &__main {
+        font-size: 7.2rem;
+        line-height: 1.2;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.section__wrapper {
+  @include section-wrapper();
+
+  &:first-of-type::after {
+    content: "";
+    width: 100vw;
+    height: 160px;
+    background-color: #f2f2f2;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  &:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+
+  &__aboutUs {
+    @include content-wrapper();
+    position: relative;
+    background-image: url(../img/aboutUs.png);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    height: 70vh;
+
+    &__text {
+      background-color: rgba(255, 255, 255, .95);
+      padding: 50px 30px;
+      max-width: 590px;
+      box-sizing: border-box;
+      position: absolute;
+      top: 50%;
+      left: 35%;
+      transform: translateY(-50%) translateX(-50%);
+
+      p {
+        margin: 20px 0;
+      }
+
+      a {
+        @include btn-style();
+      }
+    }
+  }
+
+  &__contents {
+    @include content-wrapper();
+    padding-bottom: 60px;
+
+    img {
+      margin: 30px 0;
+      max-width: 580px;
+    }
+
+    p {
+      margin-bottom: 30px;
+    }
+
+    a {
+      @include btn-style();
+    }
+  }
+  &__topics {
+    @include content-wrapper();
+    padding-bottom: 60px;
+
+    h2 {
+      margin-bottom: 30px;
+    }
+
+    &__list {
+      max-width: 700px;
+      margin-left: auto;
+
+      &__item {
+        padding-bottom: 16px;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 30px;
+
+        &__date {
+          color: #cecece;
+          font-size: 1rem;
+          font-weight: bold;
+          margin-bottom: 12px;
+        }
+
+        &__title {
+          font-size: 1.4rem;
+          color: #333;
+          font-weight: bold;
+        }
+
+      }
+    }
+
+    a {
+      @include btn-style();
+      margin-left: auto;
+    }
+  }
+
+  &__contact {
+    @include content-wrapper();
+    align-items: center;
+    flex-flow: row-reverse;
+    padding-bottom: 150px;
+
+    &__text {
+      max-width: 570px;
+      margin-right: 20px;
+      flex: 1;
+
+      p {
+        margin: 30px 0;
+      }
+    }
+
+    a {
+      @include btn-style()
+    }
+
+    img {
+      max-width: 580px;
+      width: 25%;
+      flex: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  @include max768();
+
+  .section__wrapper {
+    padding-top: 80px;
+
+    &__aboutUs {
+      &__text {
+        left: 50%;
+        width: 100%;
+      }
+    }
+
+    &__contents {
+      display: block;
+
+      &__works {
+        margin-bottom: 80px;
+      }
+    }
+
+    &__topics {
+      a {
+        margin-left: 0;
+        margin-right: auto;
+      }
+    }
+
+    &__contact {
+      display: block;
+
+      img {
+        width: 100%;
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .top__wrapper__text {
+    right: 15%;
+  }
+
+  .header__nav {
+    width: 42vw;
+  }
+
+  .section__wrapper {
+    &__aboutUs {
+      height: 80vh;
+
+      &__text {
+        width: 90%;
+      }
+    }
+
+    &__contact {
+      padding-bottom: 30px;
+    }
+  }
+}
